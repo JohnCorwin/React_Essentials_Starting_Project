@@ -26,6 +26,7 @@ function App() {
             { CORE_CONCEPTS.map((concept) => {
 
               return <CoreConcept
+                key={concept.title}
                 {...concept}
               />
             })}
@@ -37,6 +38,7 @@ function App() {
             {
               Object.keys(EXAMPLES).map((key) => {
                 return <TabButton
+                  key={key}
                   isSelected={selectedTopic===key}
                   onSelect={() => handleSelect(key)}
                 >
