@@ -1,5 +1,3 @@
-import "./CoreConcept.css";
-
 function CoreConcept({ title, description, image }) {
     return (<li>
         <img src={image} alt={title} />
